@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0;
+    text-align: center; /* Center text and heading */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+}
+
+#gallery img {
+    width: 200px; /* Default width of images */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid transparent;
+    transition: transform 0.3s, border-color 0.3s;
+    outline: none;
+}
+
+#gallery img:focus {
+    border-color: blue;
+}
+
+#gallery img:hover {
+    cursor: pointer;
+    border-color: green;
+    transform: scale(1.1); /* Enlarge image on hover */
+}
